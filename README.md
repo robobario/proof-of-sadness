@@ -24,6 +24,18 @@ OpenJDK 64-Bit Server VM Corretto-8.282.08.1 (build 25.282-b08, mixed mode)
 mvn -version
 Apache Maven 3.8.4 (9b656c72d54e5bacbed989b64718c159fe39b537)
 ```
+also reproduced on another linux machine:
+```
+nproc:16
+Linux version 4.14.268-205.500.amzn2.x86_64 (mockbuild@ip-10-0-35-1) (gcc version 7.3.1 20180712 (Red Hat 7.3.1-13) (GCC)) #1 SMP Wed Mar 2 18:38:38 UTC 2022
+java -version
+openjdk version "1.8.0_282"
+OpenJDK Runtime Environment Corretto-8.282.08.1 (build 1.8.0_282-b08)
+OpenJDK 64-Bit Server VM Corretto-8.282.08.1 (build 25.282-b08, mixed mode)
+ mvn -version
+Apache Maven 3.6.3 (cecedd343002696d0abb50b32b541b8a6ba2883f)
+```
+
 
 ```
 [ERROR] Failed to execute goal org.jetbrains.kotlin:kotlin-maven-plugin:1.6.10:compile (compile) on project lib-5: Compilation failure
