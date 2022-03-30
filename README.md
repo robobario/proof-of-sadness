@@ -13,6 +13,18 @@ The desired order of events for the failure is:
 
 # Collected Errors
 
+this machine is:
+```
+nproc: 8
+Linux version 5.15.21-1-lts (linux-lts@archlinux) (gcc (GCC) 11.1.0, GNU ld (GNU Binutils) 2.36.1) #1 SMP Sun, 06 Feb 2022 07:58:26 +0000
+java -version
+openjdk version "1.8.0_282"
+OpenJDK Runtime Environment Corretto-8.282.08.1 (build 1.8.0_282-b08)
+OpenJDK 64-Bit Server VM Corretto-8.282.08.1 (build 25.282-b08, mixed mode)
+mvn -version
+Apache Maven 3.8.4 (9b656c72d54e5bacbed989b64718c159fe39b537)
+```
+
 ```
 [ERROR] Failed to execute goal org.jetbrains.kotlin:kotlin-maven-plugin:1.6.10:compile (compile) on project lib-5: Compilation failure
 [ERROR] java.lang.NullPointerException
