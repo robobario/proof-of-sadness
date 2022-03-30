@@ -1,3 +1,5 @@
+We have had ongoing issues with kotlin parallel build failures. This reproduces it (on at least 2 machines 😄)
+
 Run `test.sh` to run a 20 thread parallel build repeatedly
 
 The build contains 10 kotlin modules and 10 non-kotlin modules to try and
