@@ -2,6 +2,9 @@ We have had ongoing issues with kotlin parallel build failures. This reproduces 
 
 Run `test.sh` to run a 20 thread parallel build repeatedly
 
+`mitigate.sh` demonstrates a workaround setting a couple of idea system 
+properties so they are present before surefire does it's first clone.
+
 The build contains 10 kotlin modules and 10 non-kotlin modules to try and
 provoke a surefire run on a java project to start before the first kotlin
 module run.
